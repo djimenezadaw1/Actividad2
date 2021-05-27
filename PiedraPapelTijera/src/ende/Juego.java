@@ -13,8 +13,7 @@ public class Juego
     private static int VICTORIAP1 = 0;
     private static int VICTORIAP2 = 0;
 
-	public static void main(String args[])
-    {
+	public static void main(String args[]) {
         Jugador p1=new Jugador();
         Jugador p2=new Jugador();
         boolean finDeJuego=false;  
@@ -79,7 +78,7 @@ public class Juego
 /**
  *
  */
-class Jugador{
+class Jugador {
 	private static final String TIJERAS = "tijeras";
 	private static final String PAPEL = "papel";
 	private static final String PIEDRA = "piedra";
@@ -89,8 +88,7 @@ class Jugador{
     /**
      * Escoge piedra, papel o tijera al azar
      */
-    public String opcion_al_azar()
-    {
+    public String opcion_al_azar() {
         String opcion="";
         int c = (int)(Math.random() * 3);
         switch(c){
